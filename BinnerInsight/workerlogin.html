@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Worker Dashboard</title>
+    <style>
+        /* Global Styles */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            background-image: url('image/images2.jpeg'); /* Add the path to your animated binmen image */
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #33333314;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        /* Container Styles */
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Background color with opacity */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        /* Task List Styles */
+        h2 {
+            text-align: center;
+        }
+
+        .task-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .task-list-item {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .task-list-item:hover {
+            background-color: #e0e0e0;
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .modal-content {
+            background-color: #fff;
+            margin: 10% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            border-radius: 10px;
+        }
+
+        .close {
+            color: #888;
+            float: right;
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        /* Button Styles */
+        button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #55555560;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Worker Dashboard</h1>
+    </header>
+    <div class="container">
+        <h2>Welcome, Worker!</h2>
+        <p>This is your dashboard where you can view and manage tasks assigned to you.</p>
+        <h3>Your Tasks:</h3>
+        <ul class="task-list">
+            <li class="task-list-item">
+                Task 1: Location Assigned
+            </li>
+            <li class="task-list-item">
+                Task 2:  Confirm Attendance
+            </li>
+            <li class="task-list-item">
+                Task 3: none
+            </li>
+            <!-- Add more tasks here as needed -->
+        </ul>
+    </div>
+
+    <!-- Button to open modal -->
+    <button id="openModalBtn">Open Modal</button>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Task Details</h2>
+            <p>This is a detailed description of the task.</p>
+            <p>Task Deadline: January 15, 2024</p>
+        </div>
+    </div>
+
+    <!-- JavaScript for modal functionality -->
+    <script>
+        var modal = document.getElementById('myModal');
+        var btn = document.getElementById('openModalBtn');
+        var span = document.getElementsByClassName('close')[0];
+
+        btn.onclick = function () {
+            modal.style.display = 'block';
+        }
+
+        span.onclick = function () {
+            modal.style.display = 'none';
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

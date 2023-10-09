@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaint and Request Submission</title>
+    <link rel="stylesheet" href="complain.css">
+    <!-- Include necessary CSS and JavaScript files here -->
+</head>
+<body>
+    <header>
+        <h1>Complaint and Request Submission</h1>
+    </header>
+
+    <section class="complaint-form-container">
+        <form id="complaint-form">
+            <label for="issue-description">Issue Description:</label>
+            <textarea id="issue-description" name="issue-description" rows="4" required></textarea>
+
+            <label for="photo-upload">Attach Photos:</label>
+            <input type="file" id="photo-upload" name="photo-upload" accept="image/*" multiple>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var complaintForm = document.getElementById('complaint-form');
+            complaintForm.addEventListener('submit', function (event) {
+                event.preventDefault(); // Prevent the default form submission
+        
+                // Here, you can add code to handle form data and submission to the server
+                // For example, you can use fetch() to send the data to a server endpoint
+            });
+        });
+        
+    </script>
+
+    <!-- Include JavaScript for form submission and handling here -->
+</body>
+</html>

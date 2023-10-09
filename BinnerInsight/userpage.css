@@ -1,0 +1,142 @@
+ /* Your CSS styles here */
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.navbar {
+    background-color: #4daca1;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #357c75;
+}
+
+.mobile-nav-button {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar a:not(:first-child) {
+        display: none;
+    }
+
+    .navbar a.icon {
+        float: right;
+        display: block;
+    }
+
+    .navbar.responsive {
+        position: relative;
+    }
+
+    .navbar.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    /* Style the navbar */
+.navbar {
+    background-color: #333; /* Background color */
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #4daca1;
+}
+
+/* Style the navbar links */
+.navbar-link {
+    color: #ffffff; /* Text color */
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px 0;
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+/* Change navbar link color on hover */
+.navbar-link:hover {
+    color: #4daca1; /* Text color on hover */
+}
+
+/* Style the Assigned Worker tab */
+.tab {
+    background-color: #4daca1; /* Background color */
+    color: #ffffff; /* Text color */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Padding */
+    display: inline-block; /* Make it an inline block to adjust its size */
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+/* Change tab background color and text color on hover */
+.tab:hover {
+    background-color: #ffffff; /* Background color on hover */
+    color: #4daca1; /* Text color on hover */
+}
+/* Add this CSS after your existing styles */
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Adjust the padding as needed */
+}
+
+.nav-links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 20px; /* Adjust the spacing between navigation links */
+}
+
+.nav-links a {
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+.profile a {
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Style the "Profile" link when hovered */
+.profile a:hover {
+    background-color: #555; /* Change the background color on hover */
+    border-radius: 5px; /* Add rounded corners on hover */
+}
+
+ 
+
+
+
+
+
+
+
+}

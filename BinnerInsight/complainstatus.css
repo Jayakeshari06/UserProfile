@@ -1,0 +1,61 @@
+/* Reset default styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Header styles */
+header {
+    background-color: #232f3e;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+/* Complaint status container styles */
+.complaint-status-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.complaint-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.complaint-list li {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.complaint-list li:last-child {
+    border-bottom: none;
+}
+
+/* Style for complaint IDs */
+.complaint-list li strong:first-child {
+    color: #0073e6;
+}
+
+/* Style for complaint statuses */
+.complaint-list li strong:nth-child(2) {
+    color: #39ac73;
+}
+
+/* Style for timestamps */
+.complaint-list li strong:nth-child(3) {
+    color: #888;
+    font-size: 14px;
+}

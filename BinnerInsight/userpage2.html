@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waste Management System</title>
+    <link rel="stylesheet" href="userpage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="stylesheet" href="userpage2.css">
+</head>
+<body>
+    <header>
+        <h1>WELCOME USER</h1>
+    </header>
+
+    <div class="navbar" id="myNavbar">
+        <a href="#" class="icon" onclick="toggleNav()">&#9776;</a>
+        <a href="#">Home</a>
+        <div class="nav-links">
+            <ul>
+                <li class="profile-icon">
+                    <a href="profile.html">
+                        <a href="profile2.html">
+                        <i class="fa fa-user-circle"></i> <!-- User Profile Icon -->
+                    </a>
+                  </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Feature Box: Real-Time Binmen Tracking -->
+    <a href="realtimebinmen.html"> <!-- Link to Real-Time Binmen Tracking page -->
+        <div class="feature-box">
+            <i class="fas fa-calendar"></i> <!-- Trash Collection Schedule Icon -->
+            <h3>Real-Time Binmen Tracking</h3>
+        </div>
+    </a>
+    <!-- Include content or functionality related to this feature here -->
+
+    <!-- Feature Box: Trash Collection Schedule -->
+    <a href="trash.html">
+    <div class="feature-box">
+        <i class="fas fa-calendar"></i> <!-- Trash Collection Schedule Icon -->
+        <h3>Trash Collection Schedule</h3>
+        <!-- Include content or functionality related to this feature here -->
+    </div>
+    </a>
+
+    <!-- Feature Box: Complaint and Request Submission -->
+    <a href="complain.html">
+    <div class="feature-box">
+        <i class="fas fa-exclamation-circle"></i> <!-- Complaints Icon -->
+        <h3>Complaint and Request Submission</h3>
+        <!-- Include content or functionality related to this feature here -->
+    </div>
+    </a>
+
+    <!-- Feature Box: Complaint Status Tracking -->
+    <a href="complainstatus.html">
+    <div class="feature-box">
+        <i class="fas fa-clock"></i> <!-- Complaint Status Icon -->
+        <h3>Complaint Status Tracking</h3>
+        <!-- Include content or functionality related to this feature here -->
+    </div>
+    </a>
+
+    <!-- Feature Box: Notifications and Alerts -->
+    <a href="notificationalert.html">
+    <div class="feature-box">
+        <i class="fas fa-bell"></i> <!-- Notifications Icon -->
+        <h3>Notifications and Alerts</h3>
+        <!-- Include content or functionality related to this feature here -->
+    </div>
+    </a>
+
+    <!-- Add more feature boxes for other features -->
+
+    <!-- JavaScript for toggling mobile navigation -->
+    <script>
+        function toggleNav() {
+            var x = document.getElementById("myNavbar");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+    </script>
+
+    <!-- JavaScript for opening Real-Time Binmen Tracking page -->
+    <script src="userpage.js"></script>
+</body>
+</html>

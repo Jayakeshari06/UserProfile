@@ -1,0 +1,71 @@
+/* Reset default styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Header styles */
+header {
+    background-color: #232f3e;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+/* Notification settings container */
+.notification-settings {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.notification-settings h2 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.notification-settings p {
+    margin-bottom: 20px;
+}
+
+/* Notification options */
+.notification-option {
+    margin-bottom: 10px;
+}
+
+.notification-option label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.notification-option input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Submit button */
+button[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
